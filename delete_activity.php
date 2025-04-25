@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/config.php';
+require_once 'config.php';
 
 if (!is_logged_in() || !is_admin()) {
     redirect('login.php');
