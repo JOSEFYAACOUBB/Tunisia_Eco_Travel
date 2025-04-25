@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . 'config.php';
 
 if (!is_logged_in() || !is_admin()) {
     $_SESSION['error_message'] = 'Accès non autorisé';
