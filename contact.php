@@ -1,6 +1,6 @@
 <?php
-require_once 'includes/config.php';
-require_once 'includes/header.php';
+require_once 'config.php';
+require_once 'header.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Traitement du formulaire de contact (simulé)
@@ -48,11 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <h4 class="card-title mb-4">Nos Coordonnées</h4>
                         <div class="mb-4">
                             <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Adresse</h5>
-                            <p>123 Rue de l'Éco-Tourisme<br>Tunis 1000, Tunisie</p>
+                            <p>Manouba <br>Tunis,Tunisie</p>
                         </div>
                         <div class="mb-4">
                             <h5><i class="fas fa-phone text-primary me-2"></i> Téléphone</h5>
-                            <p>+216 12 345 678</p>
+                            <p>+216 97 847 281</p>
                         </div>
                         <div class="mb-4">
                             <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
@@ -78,4 +78,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>
