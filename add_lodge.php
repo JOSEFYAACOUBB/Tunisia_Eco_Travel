@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/config.php';
+require_once 'config.php';
 
 if (!is_logged_in() || !is_admin()) {
     redirect('login.php');
@@ -17,11 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Process file uploads
     $imagePaths = [];
     if (!empty($_FILES['photos']['name'][0])) {
-        $uploadDir = '../assets/images/lodges/';
-        if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0755, true);
-        }
-
         foreach ($_FILES['photos']['tmp_name'] as $index => $tmpName) {
             // Security checks
             $fileType = $_FILES['photos']['type'][$index];
@@ -42,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Generate unique filename
             $ext = pathinfo($_FILES['photos']['name'][$index], PATHINFO_EXTENSION);
             $newFileName = 'lodge_' . uniqid() . '.' . strtolower($ext);
-            $destination = $uploadDir . $newFileName;
+            $destination =$newFileName;
 
             // Move file if valid
             if (move_uploaded_file($tmpName, $destination)) {
-                $imagePaths[] = 'assets/images/lodges/' . $newFileName;
+                $imagePaths[] =$newFileName;
             }
         }
     }
@@ -180,10 +175,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <!-- Include CSS -->
-<link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/upload.css">
+<link rel="stylesheet" href="<?php echo SITE_URL; ?>upload.css">
 
 <!-- Include JavaScript -->
-<script src="<?php echo SITE_URL; ?>/assets/js/upload.js"></script>
+<script src="<?php echo SITE_URL; ?>upload.js"></script>
 
 <script>
 // Form validation
