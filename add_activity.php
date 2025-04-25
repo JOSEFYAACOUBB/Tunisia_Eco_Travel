@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/config.php';
+require_once 'config.php';
 
 if (!is_logged_in() || !is_admin()) {
     redirect('login.php');
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Process file uploads
     $uploaded_images = [];
     if (!empty($_FILES['activity_images']['name'][0])) {
-        $uploadDir = '../assets/images/activities/';
+        $uploadDir = '';
         
         // Create directory if it doesn't exist
         if (!file_exists($uploadDir)) {
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Move file if valid
             if (move_uploaded_file($tmpName, $destination)) {
-                $uploaded_images[] = 'assets/images/activities/' . $newFilename;
+                $uploaded_images[] = $newFilename;
             }
         }
     }
@@ -185,10 +185,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <!-- Include CSS -->
-<link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/upload.css">
+<link rel="stylesheet" href="<?php echo SITE_URL; ?>upload.css">
 
 <!-- Include JavaScript -->
-<script src="<?php echo SITE_URL; ?>/assets/js/upload.js"></script>
+<script src="<?php echo SITE_URL; ?>upload.js"></script>
 
 <script>
 // Form validation
