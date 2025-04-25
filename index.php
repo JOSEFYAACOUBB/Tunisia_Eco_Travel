@@ -1,7 +1,7 @@
 
 <?php
-require_once 'includes/config.php';
-require_once 'includes/header.php';
+require_once 'config.php';
+require_once 'header.php';
 
 $lodges = get_eco_lodges(3);
 $activities = get_activities(3);
@@ -25,7 +25,7 @@ $activities = get_activities(3);
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="assets/images/background.jpg" alt="Paysage Tunisien" class="img-fluid rounded-3 shadow">
+                <img src="background.jpg" alt="Paysage Tunisien" class="img-fluid rounded-3 shadow">
             </div>
         </div>
     </div>
@@ -186,7 +186,7 @@ $activities = get_activities(3);
                         <p class="mb-0">L'éco-lodge était magnifique et le personnel a fait tout son possible pour rendre notre séjour mémorable tout en respectant l'environnement.</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <img src="assets/images/temoignage/salah.jpg" class="rounded-circle me-3" width="50" height="50" alt="Sarah M.">
+                        <img src="salah.jpg" class="rounded-circle me-3" width="50" height="50" alt="Sarah M.">
                         <div>
                             <h5 class="h6 mb-0">Sarah M.</h5>
                             <small class="text-white-50">Egypt, Cairo</small>
@@ -201,7 +201,7 @@ $activities = get_activities(3);
                         <p class="mb-0">Le safari dans le désert avec des guides locaux était le point fort de notre voyage. Leur connaissance de l'écosystème était impressionnante.</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <img src="assets/images/temoignage/james.jpg" class="rounded-circle me-3" width="50" height="50" alt="James L.">
+                        <img src="james.jpg" class="rounded-circle me-3" width="50" height="50" alt="James L.">
                         <div>
                             <h5 class="h6 mb-0">James L.</h5>
                             <small class="text-white-50">Toronto, Canada</small>
@@ -216,7 +216,7 @@ $activities = get_activities(3);
                         <p class="mb-4">Réserver via Tunisia Eco-Travel m'a fait me sentir bien pendant mes vacances en sachant que je soutenais les communautés locales.</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <img src="assets/images/temoignage/amina.jpg" class="rounded-circle me-3" width="50" height="50" alt="Amina K.">
+                        <img src="amina.jpg" class="rounded-circle me-3" width="50" height="50" alt="Amina K.">
                         <div>
                             <h5 class="h6 mb-0">Amina K.</h5>
                             <small class="text-white-50">Dubai, UAE</small>
