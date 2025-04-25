@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/config.php';
+require_once 'config.php';
 
 if (!is_logged_in() || !is_admin()) {
     redirect('login.php');
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $image_url = $lodge['image_url']; // Keep existing by default
     
     if (!empty($_FILES['lodge_images']['name'][0])) {
-        require_once '../includes/image_upload.php';
+        require_once 'image_upload.php';
     
         if (!empty($uploaded_images)) {
             $image_url = json_encode($uploaded_images);
@@ -153,10 +153,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <!-- Include CSS -->
-<link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/upload.css">
+<link rel="stylesheet" href="<?php echo SITE_URL; ?>upload.css">
 
 <!-- Include JavaScript -->
-<script src="<?php echo SITE_URL; ?>/assets/js/upload.js"></script>
+<script src="<?php echo SITE_URL; ?>upload.js"></script>
 
 <script>
 // Form validation
