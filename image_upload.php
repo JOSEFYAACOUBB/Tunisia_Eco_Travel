@@ -1,15 +1,12 @@
 <?php
 function uploadActivityImages($files) {
-    $uploadDir = '../assets/images/activities/';
+ 
     $allowedTypes = ['image/jpeg', 'image/png'];
     $maxFileSize = 5 * 1024 * 1024; // 5MB
     $uploadedPaths = [];
 
-    // Créer le dossier s'il n'existe pas
-    if (!file_exists($uploadDir)) {
-        mkdir($uploadDir, 0755, true);
-    }
 
+  
     // Traiter chaque fichier
     foreach ($files['tmp_name'] as $key => $tmpName) {
         $fileName = $files['name'][$key];
@@ -37,7 +34,7 @@ function uploadActivityImages($files) {
         
         // Déplacer le fichier
         if (move_uploaded_file($tmpName, $destination)) {
-            $uploadedPaths[] = 'assets/images/activities/' . $newFileName;
+            $uploadedPaths[] = $newFileName;
         }
     }
 
