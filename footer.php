@@ -15,7 +15,7 @@
                 <ul class="list-unstyled text-muted small">
                     <li class="mb-2 d-flex align-items-start">
                         <i class="fas fa-map-marker-alt text-primary me-2 mt-1"></i>
-                        <span>123 Rue Eco, Tunis 1000, Tunisie</span>
+                        <span>Manouba, Tunis, Tunisie</span>
                     </li>
                     <li class="mb-2 d-flex align-items-start">
                         <i class="fas fa-envelope text-primary me-2 mt-1"></i>
@@ -23,7 +23,7 @@
                     </li>
                     <li class="mb-2 d-flex align-items-start">
                         <i class="fas fa-phone text-primary me-2 mt-1"></i>
-                        <span>+216 12 345 678</span>
+                        <span>+216 07 847 2811</span>
                     </li>
                 </ul>
             </div>
