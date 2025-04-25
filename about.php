@@ -1,6 +1,6 @@
 <?php
-require_once 'includes/config.php';
-require_once 'includes/header.php';
+require_once 'config.php';
+require_once '=header.php';
 ?>
 
 <section class="py-5">
@@ -23,7 +23,7 @@ require_once 'includes/header.php';
                 </ul>
             </div>
             <div class="col-lg-6">
-                <img src="assets/images/team/about.png" class="img-fluid rounded" alt="Culture Tunisienne">
+                <img src="about.png" class="img-fluid rounded" alt="Culture Tunisienne">
                 
                 <h4 class="mt-5">Comment Nous Travaillons</h4>
                 <div class="accordion" id="howWeWorkAccordion">
@@ -73,7 +73,7 @@ require_once 'includes/header.php';
                 <div class="row text-center">
                     <div class="col-md-4 mb-4">
                         <div class="team-member p-4">
-                            <img src="assets/images/team/youssef.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
+                            <img src="youssef.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
                             <h4>Youssef Ben Yaacoub</h4>
                             <p class="text-muted">Fondateur & PDG</p>
                             <p>Passionné par le tourisme durable et le patrimoine tunisien.</p>
@@ -81,7 +81,7 @@ require_once 'includes/header.php';
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="team-member p-4">
-                            <img src="assets/images/team/elyes.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
+                            <img src="elyes.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
                             <h4>Elyes Attafi</h4>
                             <p class="text-muted">Responsable Communauté</p>
                             <p>Connecte avec les communautés locales pour développer des expériences authentiques.</p>
@@ -89,7 +89,7 @@ require_once 'includes/header.php';
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="team-member p-4">
-                            <img src="assets/images/team/hiba.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
+                            <img src="hiba.jpg" class="rounded-circle mb-3" width="150" height="150" alt="Membre de l'équipe">
                             <h4>Hiba Kasmi</h4>
                             <p class="text-muted">Experte en Durabilité</p>
                             <p>Veille à ce que tous nos partenaires respectent des normes environnementales strictes.</p>
@@ -101,4 +101,4 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>
